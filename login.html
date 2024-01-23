@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <script defer src="login.js"></script>
+    <title>Login and Signup</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container" id="loginFormContainer">
+            <form id="loginForm">
+                <h2>Login</h2>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+                <p class="error-message" id="loginError"></p>
+            </form>
+            <p>Don't have an account? <a href="#" id="signupLink">Signup</a></p>
+        </div>
+        <div class="form-container hidden" id="signupFormContainer">
+            <form id="signupForm">
+                <h2>Signup</h2>
+                <label for="newUsername">Username:</label>
+                <input type="text" id="newUsername" name="newUsername" required>
+                <label for="newPassword">Password:</label>
+                <input type="password" id="newPassword" name="newPassword" required>
+                <button type="submit">Signup</button>
+                <p class="error-message" id="signupError"></p>
+            </form>
+            <p>Already have an account? <a href="#" id="loginLink">Login</a></p>
+        </div>
+    </div>
+</body>
+</html>
